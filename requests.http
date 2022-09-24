@@ -10,23 +10,19 @@ content-type: application/json
     "password": "admin"
 }
 
-### USERS
-GET http://127.0.0.1:8000/users/
-content-type: application/json
-Authorization: Bearer 
-
-### AUTH DJOSER
-GET http://127.0.0.1:8000/auth/users/me/
-content-type: application/json
-Authorization: Bearer 
 ### CREATE USER
 POST http://127.0.0.1:8000/auth/users/
 content-type: application/json
 
 {
-    "username": "user2",
-    "password": "@Pplec0m"
+    "username": "user1",
+    "password": ""
 }
+
+### AUTH DJOSER
+GET http://127.0.0.1:8000/auth/users/me/
+content-type: application/json
+Authorization: Bearer 
 
 ### CATS
 POST http://127.0.0.1:8000/cats/
